@@ -18,7 +18,7 @@
       다) commit(커밋) : 작업 사항에 대해 Staging Area에서 Repository로 옮기는 과정
       라) Repository : 새로운 버전을 등록
     4) git의 동작
-      가) git init :  
+      가) git init : 최초 1회에 한하여 사용
       나) git status : 변경 상태를 확인
       다) git add 파일경로 : staging area로 파일을 옮기는 과정
         * 공백으로 여러 파일경로를 올릴 수 있음
@@ -34,3 +34,11 @@
           (6) git commit 뒤 -m "넣을내용"을 통해 커밋 메시지 탑재 가능
       마) git log : 로그를 기록
           (1) --oneline : 로그를 1줄로 관리
+      바) git remote add origin 주소
+        (1) origin은 별명, 다른 단어로 사용해도 상관없음
+          * origin으로 관습처럼 사용
+        (2) git remote -v로 저장한 주소 확인 가능
+        (3) git push 
+      사) push : 모든 작업을 진짜 끝나면 실행
+        * git push 뒤 -u를 추가하면 다음부터는 origin master를 생략할 수 있다. (git push -u origin master)
+      아) clone : 최초로 다른 이의 프로젝트를 복제할 때
