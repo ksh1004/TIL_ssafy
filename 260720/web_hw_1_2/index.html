@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <style>
+    body {
+      font-family: "Times New Roman", serif;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: fit-content;
+    }
+
+    .form-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    label {
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      font-size: 18px;
+      padding: 6px 10px;
+      border: 1px solid #999;
+      outline: none;
+    }
+
+    input[type="text"] {
+      width: 300px;
+    }
+
+    input[type="password"] {
+      width: 280px;
+    }
+
+    input:focus {
+      border: 2px solid blue;
+    }
+
+    button {
+      font-size: 20px;
+      padding: 6px 20px;
+      background-color: #e0e0e0;
+      border: 1px solid #999;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<form>
+  <div class="form-row">
+    <label for="username">USERNAME :</label>
+    <input type="text" id="username" placeholder="아이디를 입력 해 주세요.">
+  </div>
+  <div class="form-row">
+    <label for="pwd">PWD :</label>
+    <input type="password" id="pwd">
+    <button type="button">로그인</button>
+  </div>
+</form></body>
+</html>
